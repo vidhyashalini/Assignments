@@ -1,0 +1,56 @@
+
+<html>
+<head>
+     <style>
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          margin: 20px 0;
+        }
+    
+        th, td {
+          border: 1px solid #dddddd;
+          padding: 8px;
+          text-align: left;
+        }
+    
+        th {
+          background-color: #f2f2f2;
+        }
+      </style> 
+    
+</head>
+
+<body>
+    <h3>Developing Web Applications using Express -- using Handlebar View Engine</h3>
+    <hr /> 
+    
+
+   <div>
+        <h3>Application</h3>
+
+         <table border="2" width="400" cellspacing="0" cellpadding="5">
+
+            <tr>
+                <th> Name</th>
+                <th>City</th>
+                <th>Country</th>
+            </tr>
+
+
+             {{#each applicationArray}}
+              <tr> 
+               <td> {{this.name}}  </td>  
+               <td> {{this.city}}  </td>  
+               <td> {{this.country}}  </td>  
+              </tr> 
+             {{/each}}
+ 
+
+         </table>   
+        
+    </div>
+
+</body>
+
+</html>
