@@ -1,0 +1,15 @@
+Assignment 1:
+
+1)What are the request methods in http?
+Ans:
+The Various Types of HTTP Request Methods are:GET,HEAD,POST,PUT,DELETE,PATCH,TRACE,CONNECT.
+2)Find the out the difference between GET and POST methods?
+Ans:
+Both GET and POST method is used to transfer data from client to server in HTTP protocol but 
+Main difference between POST and GET method is that GET carries request parameter appended
+in URL string while POST carries request parameter in message body which makes it more secure
+way of transferring data from client to server.
+3)How to send the files as response in express js?
+Ans:
+In Express.js, you can send files as a response using the`res.sendFile()`method. This method sends 
+the file at the given path as the response.
