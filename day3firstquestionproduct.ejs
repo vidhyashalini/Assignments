@@ -1,0 +1,37 @@
+<html>
+<head>
+     
+</head>
+
+<body>
+    <h3>Products</h3>
+    <hr /> 
+
+      <fieldset>
+        <legend>Products</legend>
+
+        <form action="/User/Products"  method="POST">
+            Product Id :  <input  type="text" product id="t1" product name="t1"  />
+            <br/><br/>
+            Product name :  <input  type="text" product id="t2" product name="t2"  />
+            <br/><br/>
+            Price :  <input  type="number" id="t3" quantity="t3"  />
+            <br/><br/>
+            Quntity :  <input  type="number" id="t4" quantity="t4"  />
+            <br/><br/>
+            Category :  <input  type="text" id="t5" quantity="t5"  />
+            <br/><br/>
+
+            <input type="submit" value="Order" />
+            <p> <%=errorMessage%> </p> 
+           
+        </form>
+
+      </fieldset>
+
+
+    <hr/>
+    <a href="/">Back to Home</a>    
+</body>
+
+</html>

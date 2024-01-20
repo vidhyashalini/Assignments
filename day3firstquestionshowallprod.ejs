@@ -1,0 +1,50 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <h3>All Products</h3>
+    <hr />
+
+
+    <table border="2" width="400" cellspacing="0" cellpadding="5">
+
+        <tr>
+            <th>Product id</th>
+            <th>Product name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Category</th>
+            <th></th>
+        </tr>
+
+        <% for(let item of prodArray) { %>
+            <tr>
+                <td>
+                    <%=item.productid%>
+                </td>
+                <td>
+                    <%=item.productname%>
+                </td>
+                <td>
+                    <%=item.price%>
+                </td>
+                <td>
+                    <%=item.quantity%>
+                </td>
+                <td>
+                    <%=item.category%>
+                </td>
+                <td>
+                    <a href="/prod/GetProdById?pid=<%=item.productid%>">Details</a> 
+                </td>
+            </tr>
+            <% } %>
+
+    </table>
+    <hr/>
+    <a href="/">Back to Home</a>    
+</body>
+
+</html>
