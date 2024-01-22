@@ -1,0 +1,48 @@
+What are keys in React JS? How keys are involving  in array processing?
+
+*In React, keys are special attributes that provide a way to identify and differentiate between the items in a list of elements. 
+When rendering a list of elements in React, each element should have a unique key. The key is used by React to efficiently 
+update and re-render the components, especially when the list changes (e.g., items are added, removed, or reordered).
+Keys help React identify which elements have changed, been added, or been removed. 
+*When React reconciles the virtual DOM with the actual DOM, it uses keys to determine the correspondence between the old 
+and new elements, making the process more efficient.
+*Keys should be assigned to elements inside an array, typically when using the map() function to render a list of components.
+
+Here's how keys are involved in array processing:
+
+Identifying Elements:
+
+*Keys are used to identify each element in the array uniquely.
+React uses these keys to track the identity of elements between renders.
+
+*Efficient Updates:
+When a component re-renders and the array changes (items are added, removed, or reordered), React uses keys to efficiently update the DOM.
+Keys help React determine which elements have changed, been added, or been removed.
+
+*Reconciliation Algorithm:
+React's reconciliation algorithm uses keys to match elements in the new array with elements in the previous array.
+If keys remain the same between renders, React assumes the elements represent the same thing, and it updates only the necessary parts of the DOM.
+
+*Preventing Unnecessary Re-renders:
+Keys help React identify which elements have been added or removed, preventing unnecessary re-renders of unaffected components.
+Without keys, React may re-render components unnecessarily, leading to decreased performance.
+
+*Stable Identity:
+Keys should be stable, meaning they should not change between renders unless the identity of the item itself changes.
+It's important to use a unique and stable identifier for each item as the key.
+
+How to display images in React JS?
+
+1 Method-In React, you can display images using the standard HTML <img> tag. You provide the src attribute with the URL or path to the image file. 
+imageUrl = 'https://example.com/image.jpg';
+ <div>
+      <h2>Image Display</h2>
+      <img src={imageUrl} alt="Description of the image" />
+    </div>
+
+2 Method- If images are part of your React application (i.e., in your project directory), can import the image and use it directly:
+import myImage from './images/myImage.jpg';
+<div>
+      <h2>Image Display</h2>
+      <img src={myImage} alt="Description of the image" />
+    </div>
